@@ -139,18 +139,18 @@
               </div>
               <div class="col-lg-8">
                 <p class="text-white-50 text-md">
-                  Hello! I’m
+                  I’m
                   <span class="text-white">Vishweshwaran Ravi</span>, an
                   <span class="text-white">iOS App Developer</span>
                   with over
-                  <span class="text-white">four years</span>
-                  of experience, including a year at
+                  <span id="experience_id" class="text-white">5+ years</span>
+                  of experience, including
                   <span class="text-white"
                     >BMO, TCS Canada and FULL Creative</span
                   >. At this global company, I specialized in
                   <span class="text-white">SwiftUI</span>, implementing
-                  <span class="text-white">MVVM architecture</span>, integrating
-                  <span class="text-white">state machines</span>, and employing
+                  <span class="text-white">MVVM architecture</span>,
+                  <span class="text-white">TDD</span>, and employing
                   <span class="text-white">modularization strategies</span>. My
                   role involved crafting user interfaces with
                   <span class="text-white">SwiftUI</span>, ensuring clean and
@@ -227,9 +227,9 @@
                 <h4 class="font-weight-normal">iOS</h4>
               </div>
               <div class="progress">
-                <div class="progress-bar" data-percent="95">
+                <div class="progress-bar" data-percent="97">
                   <span class="percent-text"
-                    ><span class="count">95</span>%</span
+                    ><span class="count">97</span>%</span
                   >
                 </div>
               </div>
@@ -574,6 +574,14 @@
     <!--
     Essential Scripts
     =====================================-->
+    <script>
+      var experienceSpan = document.getElementById("experience_id");
+      let startYear = 2020;
+      let currentYear = new Date().getFullYear();
+      let totalExpereince = currentYear - startYear;
+      experienceSpan.textContent =
+        totalExpereince + (totalExpereince === 1 ? " year" : "+ years");
+    </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- Main jQuery -->
